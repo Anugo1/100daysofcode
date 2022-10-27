@@ -57,12 +57,20 @@
 # # # f-string
 # # print(f"your score is {score}")
 #
-age = input("What is your current age: ")
-new_age = int(age)
+# age = input("What is your current age: ")
+# new_age = int(age)
+#
+# age_left = 90 - new_age
+# days_remaining = 365 * age_left
+# weeks_remaining = 52 * age_left
+# months_remaining = 12 * age_left
+#
+# print(f"your have {days_remaining} days , {weeks_remaining} weeks and {months_remaining} months left.")
+print("Welcome to the tip calculator.")
+total_bill = float(input('What was the total bill? $'))
+percentage_tip = int(input("What percentage tip would you like to give? 12,15,20 %"))
+num_to_split_bill = int(input("How many people to split bill? "))
 
-age_left = 90 - new_age
-days_remaining = 365 * age_left
-weeks_remaining = 52 * age_left
-months_remaining = 12 * age_left
-
-print(f"your have {days_remaining} days , {weeks_remaining} weeks and {months_remaining} months left.")
+billntip = percentage_tip/100 * total_bill + total_bill
+each_bill = round(billntip / num_to_split_bill, 2)
+print(f"Each person should pay ${each_bill}")
