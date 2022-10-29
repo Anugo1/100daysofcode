@@ -66,11 +66,33 @@
 # months_remaining = 12 * age_left
 #
 # print(f"your have {days_remaining} days , {weeks_remaining} weeks and {months_remaining} months left.")
-print("Welcome to the tip calculator.")
-total_bill = float(input('What was the total bill? $'))
-percentage_tip = int(input("What percentage tip would you like to give? 12,15,20 %"))
-num_to_split_bill = int(input("How many people to split bill? "))
+# print("Welcome to the tip calculator.")
+# total_bill = float(input('What was the total bill? $'))
+# percentage_tip = int(input("What percentage tip would you like to give? 12,15,20 %"))
+# num_to_split_bill = int(input("How many people to split bill? "))
 
-billntip = percentage_tip/100 * total_bill + total_bill
-each_bill = round(billntip / num_to_split_bill, 2)
-print(f"Each person should pay ${each_bill}")
+# find the bill when the  percentage tip is added to the main bill:
+
+# billntip = percentage_tip/100 * total_bill + total_bill
+
+# roundup the billntip and store in a variable:
+
+# billntip = percentage_tip/100 * total_bill + total_bill
+# each_bill = round(billntip / num_to_split_bill, 2)
+# print(f"Each person should pay ${each_bill}")
+
+print("Welcome to the tunnel of horror")
+age = int(input("what is your age?: "))
+
+if age >= 18:
+    print("you can enter the tunnel of horrors.")
+else:
+    print("you are too young to enter the tunnel of horrors.")
+
+# code practice:
+# number = int(input("Which number do you want to check? "))
+# check_num = number % 3
+# if check_num == 0:
+#     print("This is divided by 3")
+# else:
+#     print("This is not divided by 3.")
