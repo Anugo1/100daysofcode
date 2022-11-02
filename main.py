@@ -37,16 +37,16 @@
 #
 # # print(type(height))
 # Bmi = int(weight) / float(height) ** 2
-
+#
 # new_bmi = int(Bmi)
 #
 # ano_bmi = str(new_bmi)
-# printing as  a string:
-
+# # printing as  a string:
+#
 # print("bmi is " + ano_bmi + "")
-
-# printing it as just an integer:
-
+#
+# # printing it as just an integer:
+#
 # bmiInt = int(Bmi)
 # print(bmiInt)
 
@@ -70,24 +70,25 @@
 # total_bill = float(input('What was the total bill? $'))
 # percentage_tip = int(input("What percentage tip would you like to give? 12,15,20 %"))
 # num_to_split_bill = int(input("How many people to split bill? "))
-
-# find the bill when the  percentage tip is added to the main bill:
-
-# billntip = percentage_tip/100 * total_bill + total_bill
-
-# roundup the billntip and store in a variable:
-
+#
 # billntip = percentage_tip/100 * total_bill + total_bill
 # each_bill = round(billntip / num_to_split_bill, 2)
 # print(f"Each person should pay ${each_bill}")
-
-print("Welcome to the tunnel of horror")
-age = int(input("what is your age?: "))
-
-if age >= 18:
-    print("you can enter the tunnel of horrors.")
-else:
-    print("you are too young to enter the tunnel of horrors.")
+# print("Welcome to the tunnel of horror")
+# age = int(input("what is your age?: "))
+#
+# if age >= 18:
+#     print("you can enter the tunnel of horrors.")
+#     if age == 18:
+#         print("You pay #300")
+#     elif age <= 21:
+#         print("you pay #500")
+#     elif age >= 70:
+#         print("beware of hrt attacks you pay #200")
+#     else:
+#         print("you pay #700")
+# else:
+#     print("you are too young to enter the tunnel of horrors.")
 
 # code practice:
 # number = int(input("Which number do you want to check? "))
@@ -96,3 +97,19 @@ else:
 #     print("This is divided by 3")
 # else:
 #     print("This is not divided by 3.")
+
+# height = float(input("enter your height in m: "))
+# weight = float(input("enter your weight in kg: "))
+#
+# bmi = weight / height ** 2
+# new_bmi = (round(bmi, 1))
+# if new_bmi <= 18.5:
+#     print(f"your bmi is{new_bmi} , you are underweight.")
+# elif new_bmi <= 25:
+#     print(f"your bmi is {new_bmi}, you have a normal weight.")
+# elif new_bmi <= 30:
+#     print(f"your bmi is {new_bmi}, you are overweight.")
+# elif new_bmi <= 35:
+#     print(f"your bmi is {new_bmi}, you are obese.")
+# else:
+#     print(f"your bmi is {new_bmi},you are clinically obese.")
